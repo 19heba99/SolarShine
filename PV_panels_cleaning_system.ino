@@ -48,6 +48,7 @@ void motor_forward(int r_en, int l_en,  int r_pwm, int l_pwm, int speed);
 void motor_stop(int r_en, int l_en,  int r_pwm, int l_pwm, int speed);
 void motor_reverse(int r_en, int l_en,  int r_pwm, int l_pwm, int speed) ;
 int dust_det();
+void IR_recev();
 
 void setup() {
   // put your setup code here, to run once:
@@ -87,6 +88,10 @@ void loop() {
 //  if (digitalRead(start_btn) == HIGH ||  remote_btn == 1 ) {
 //    motor_forward(Motion1R_en, Motion1L_en, Motion1R_pwm, Motion1L_pwm,90);
 //    dust_det();
+//if (remote_btn == 2) {
+
+  // stop motors
+//}
 //  }
 
 }
