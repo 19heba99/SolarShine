@@ -42,7 +42,7 @@ void startCleaning();
 void stopMotors();
 
 SchedTask startC(0,1000,startCleaning); //  Define the start cleaning (dispatch now, every 1 sec)
-SchedTask stopCleaning(1000,1000,stopMotors); // Define the stop cleaning (dispatch now, every 1 sec)
+SchedTask stopCleaning(1000,1000,stopMotors); // Define the stop cleaning (dispatch after 1 sec, every 1 sec)
 
 
 class MotorDriver {
